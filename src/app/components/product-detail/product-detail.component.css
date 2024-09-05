@@ -1,0 +1,11 @@
+.item {
+    flex: 0 0 15%;
+    margin: 0 1%;
+    box-sizing: border-box;
+}
+
+.item img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+}

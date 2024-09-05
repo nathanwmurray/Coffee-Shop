@@ -1,0 +1,20 @@
+<div class="page">
+    <div class="banner">
+        <h1 class="title">Café Olé</h1>
+        <img class="logo" src="/assets/logo.jpg">
+    </div>
+<br>
+
+    <div class="products">
+        <div  *ngFor="let coffee of display | async" class="item">
+            <h2>{{ coffee.name }}</h2>
+            <img class="img"  [src]="coffee.img">
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footTitle">Cafe Óle</p>
+        <p class="design">Designed by Nathan Murray</p>
+    </div>
+</div>
+  <app-navigation-page></app-navigation-page>
+  <app-dashboard></app-dashboard>

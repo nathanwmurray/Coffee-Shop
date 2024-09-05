@@ -1,0 +1,35 @@
+<p class="banner"> 
+    <input type="text" placeholder="Filter by drink" #filter>
+    <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
+</p>
+
+
+
+<div class="products">
+
+<div class="item" *ngFor="let c of filteredProducts">
+    <ul>
+    <a [routerLink]="['/products', c.id]">{{c.name}}</a>
+    <li>{{c.price}}</li>
+    <img class="img" [src]="c.img">
+    </ul>
+    <button [routerLink]='["/edit", c.id]'>Edit</button>   
+    <button (click)="deleteCoffee(c.id)" >Delete</button>
+</div>
+</div>
+
+<div class="add">
+    <p>Have a suggestion for a new drink?</p>
+
+    <br>
+    <br>
+<button class="create" routerLink="/add">Create your own!</button>
+
+
+</div>
+
+<div class="footer">
+    <p class="footTitle">Cafe Óle</p>
+    <p class="design">Designed by Nathan Murray</p>
+</div>
+<app-navigation-page></app-navigation-page>

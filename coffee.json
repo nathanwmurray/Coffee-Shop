@@ -1,0 +1,36 @@
+{
+  "coffee": [
+    {
+      "id": "1",
+      "name": "Drip Coffee",
+      "price": "$2",
+      "description": "A piping hot cup of our freshly brewed house blend",
+      "img": "assets/coffee.jpg",
+      "coffee": true
+    },
+    {
+      "id": "2",
+      "name": "Americano",
+      "price": "$3",
+      "description": "A double shot of golden espresso over hot water",
+      "img": "assets/americano.jpg",
+      "coffee": true
+    },
+    {
+      "id": "3",
+      "name": "Tea",
+      "price": "$3",
+      "description": "Choose from our selection of Herbal, Green, or Black teas",
+      "img": "assets/tea.jpg",
+      "coffee": false
+    },
+    {
+      "id": "4",
+      "name": "Smoothies",
+      "price": "$3",
+      "description": "Grab a refreshing fruit smoothie; the perfect on the go healthy snack",
+      "img": "assets/smoothie.jpg",
+      "coffee": false
+    }
+  ]
+}

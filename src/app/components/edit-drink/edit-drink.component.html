@@ -1,0 +1,30 @@
+<div class="banner">
+    <p class="bannertext">Edit</p>
+</div>
+
+<div class="products">
+    <form #form="ngForm" (ngSubmit)="onSubmit()">
+
+        <ul>Drink Name</ul>
+        <input type="text" name="name" [(ngModel)]="currentCoffee.name">
+        <br>
+        <li class="item">Price</li>
+        <input type="text" name="price" [(ngModel)]="currentCoffee.price">
+        <br>
+        <li class="item">Add a description</li>
+        <input type="text" name="description" [(ngModel)]="currentCoffee.description">
+        <br>
+        <li class="item">Image</li>
+        <input type="url" name="img" [(ngModel)]="currentCoffee.img">
+        <br>
+        <li class="item">Is this a coffee based drink?</li>
+        <select name="coffee" [(ngModel)]="currentCoffee.coffee">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+        <br>
+        <button type="submit">Update</button>
+
+    </form>
+</div>
+<app-navigation-page></app-navigation-page>
